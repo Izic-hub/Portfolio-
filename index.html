@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="verify-admitad" content="b317f2bc37" />
+  <title>izic✨ Portfolio| Welcome</title>
+   <link rel="icon" href="logo.png">
+ <link rel="stylesheet" href="style.css">
+  </head> 
+<body>
+    <nav>
+    <div class="hamburger-menu">
+      <span>Izic✨~menu↓</span>      
+    </div>
+    <ul>  
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello! I'm <kbd>izic✨</kbd>, a passionate frontend developer dedicated to crafting exceptional digital experiences.
+  <br>
+  .Frontend Development: HTML, CSS, & JavaScript<br>
+ .Responsive Design: Mobile-friendly and accessible interfaces
+  </p>
+         
+     <center><div class="wrapper"></div></center>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1>My Projects</h1>
+  <div class="project-grid">
+           <div class="project">
+           <img src="paygo.png" alt="Project 1">
+                <h3>pay-go site<br><a href="https://izic-hub.github.io/Paying-site/">link here</a></h3>
+     <p>A site that pays user for performing task. Generally for students, employed workers and even unemployed, to add more income to their daily endeavors</p>
+        </div>
+           <div class="project">
+           <img src="codehub.png" alt="Project 2">
+                 <h3>Code-Hub<br><a href="https://izic-hub.github.io/Izic-hub/">link here</a></h3>
+     <p>A coding community to learn & interact all matters about coding </p>
+            </div>
+           <div class="project">
+           <img src="task.png" alt="Project 3">
+                 <h3>Task for coders<br><a href="https://izic-hub.github.io/Task/">link here</a></h3>
+      <p>An assignment platform to test beginner coders, time based </p>
+            </div>
+          <div class="project">
+          <img src="" alt="Project 4">
+                 <h2>?</h2>
+                           <p id="lost"> i lost the files!</p>
+            </div>
+            <div class="project">
+           <img src="hairstyle.png" alt="Project 5">
+                 <h3>Hairstylist page<br><a href="https://izic-hub.github.io/Happiness-style/">link here</a></h3>
+      <p> A site for a female stylist, offering the service of plaiting, sales and more...</p>
+            </div>
+            <div class="project">
+           <img src="regards.png" alt="Project 6">
+                 <h3>Seasons compliment<br><a href="https://izic-hub.github.io/Greating-/">link here</a></h3>
+      <p>mery Christmas 🎄 and New year regards 🎉 ro friends and family</p>
+            </div>
+           
+        </div>
+    </section>
+  <footer>
+      <p>Izic✨ portfolio, Copyright &copy; 2025</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+     
+    
+body {
+    background: linear-gradient(135deg, #7b768db2, white);
+    font-family: fantasy;
+    
+}
+
+    nav{
+  background-color: none;
+  color: #fff;
+  padding: 0.25em;
+  margin: 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.hamburger-menu{
+  cursor: pointer;
+}
+
+.hamburger-menu span{
+  display: block;
+  width: 70px;
+  height: 10px;
+  background-color: none;
+  margin-bottom: 10px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+ a{
+  color: #072156f0;
+  text-decoration: none;
+  font-size: 17px;
+} 
+ .show{
+  display: block !important;
+} 
+span{
+    color: black;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+
+section {
+    padding: 1em;
+    text-align: center;
+}
+
+ 
+#projects {
+    border: 1px dashed grey;
+    color:  #264b4be3;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.project {
+    background-color: none;
+ 
+}
+
+.project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+h3{
+    color: #0d4b0ee3;
+}
+ 
+  .wrapper{
+       max-width: 200px;
+        height: 200px;
+        border-radius: 900px; 
+        babackground-size:100%;
+        box-shadow:  3px 5px 5px grey;
+        animation: BgAnimation 50s linear infinite;
+    }
+    @keyframes BgAnimation{
+       0%{
+           background-image: url('me.png');
+           background-size: cover;
+       } 
+       35%{
+           background-image: url('ai.png');
+           background-size: cover;
+       }
+       50%{
+           background-image: url('paygo.png');
+           background-size: cover;
+       }
+       75%{
+           background-image: url('codehub.png');
+           background-size: cover;
+       }
+       100%{
+           background-image: url('me.png');
+           background-size: cover;
+    }
+}
+#lost{
+    color: red;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color: azure;
+  background-color: #a7b6b6bc;
+  text-align: center;
+}
+</style>
+
+
+
+
+
+
+<script>
+       /*menu*/
+    const hamburgerMenu= document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('ul');
+
+hamburgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+}); 
+</script>

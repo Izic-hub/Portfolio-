@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="verify-admitad" content="b317f2bc37" />
+  <title>izic✨ Portfolio| About</title>
+   <link rel="icon" href="logo.png">
+ <link rel="stylesheet" href="style.css">
+  </head> 
+<body>
+    <nav>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#"><kbd><big>Izic✨ portfolio</big></kbd></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  
+    <section id="about">
+        <h1>About Me</h1>
+     <div class="container">
+      <div claas="sun"></div>
+      <div class="earth">
+      <div class="moon"></div>
+  </div>
+  </div>
+  
+  <p id="note">
+              Izic✨ <br>
+A coder, Guitarist🎸, Graphic designer🎨,& livestock farmer
+         
+  </p>
+        <p> &nbsp I'm a highly motivated and detail-oriented web developer with a strong passion for creating innovative and effective solutions.
+with a strong foundation in HTML and CSS. I specialize in crafting visually stunning and user-friendly interfaces that bring designs to life.
+<br><br>
+<b>My Journey</b><br>
+started personal studies,
+ successfully 1yr experienced by 2025 <br>
+I fell in love with web development during my early days of exploring the internet. The way a simple code could transform into a beautiful website fascinated me. I began learning HTML and CSS, and soon I was hooked. i used to practice with my neighbor <i>ZECCO</i>, and also sort inspiration from a friend <i>Sir BENJAMIN</i>
+<br><br>
+<b>My Skills</b><br>
+- <i>HyperText Markup Language(HTML)</i>: I'm proficient in writing semantic and accessible HTML code, ensuring that my websites are readable by both humans and search engines.<br>
+- <i>Cascading Style Sheets(CSS)</i>:  I'm skilled in designing eye catching pages ,hovers and transition <br>
+- <i>JavaScript(Js)</i>: Currently, I'm focused on improving my JavaScript skills to take my frontend development skills to the next level.
+ I'm excited to explore the world of dynamic web development and create more interactive and engaging user experiences.
+<br>
+
+<big><i>Thanks for stopping by!...</i></big>
+        </p>
+    </section>
+<big><b>Atendor Isaac </b></big><sup>Izic✨</sup>...
+<footer>
+      <p>Izic✨ portfolio, Copyright &copy; 2025</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+     
+body {
+    background: linear-gradient(135deg, #7b768db2, white);
+    );
+    font-family: fantasy;
+    
+}
+
+    nav{
+  background-color: none;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.hamburger-menu{
+  cursor: pointer;
+}
+
+.hamburger-menu span{
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+ a{
+  color: #072156f0;
+  text-decoration: none;
+  font-size: 20px;
+} 
+ .show{
+  display: block !important;
+} 
+
+section {
+    padding: 1em;
+    text-align: center;
+}
+
+
+  .container{
+        font-size: 8px;
+        width: 10em;
+        height: 10em;
+        position: relative;
+  }
+   
+    .earth,.moon{
+        position: absolute;
+       border-style: solid;
+       border-color: white transparent transparent transparent;
+       border-width: 0.1em 0.1em 0 0 ;
+       border-radius: 50%;
+    }
+    .earth{
+       top: 5em;
+        left: 5em;
+        width: 30em;
+        height: 30em;
+        animation: orbit 36.5 linear infinite;
+     }
+      .moon{
+       top: 0;
+       right: 0;
+        width: 8em;
+        height: 8em;
+        animation: orbit 4.7s linear infinite;
+     }
+      .earth::before,
+      .moon::before{
+       content: "";
+       position: absolute;
+       border-radius: 50%;
+    }
+      .earth::before{
+       top: 2.5em;
+        right: 2.5em;
+        width: 4em;
+        height: 4em;
+        background-color: aqua;
+        background:url('logo.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+         .moon::before{
+       top: 0.8em;
+       right: 0.2em;
+        width: 1.2em;
+        height: 1.2em;
+        background-color: silver;
+        background:url('ai.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+      
+      }
+       @keyframes orbit{
+           to{
+           transform: rotate(360deg);
+        }
+           }
+ #note{
+     color: #072156f0;
+     font-family: monospace;
+ }
+ 
+ footer{
+  padding:20px;
+  margin-top:20px;
+  color: azure;
+  background-color:  #a7b6b6bc;
+  text-align: center;
+}
+</style>
+
+
+
+
+
+
+<script>
+       /*menu*/
+    const hamburgerMenu= document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('ul');
+
+hamburgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+}); 
+</script>

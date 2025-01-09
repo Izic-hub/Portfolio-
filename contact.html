@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="verify-admitad" content="b317f2bc37" />
+  <title>izic✨ Portfolio| contact</title>
+   <link rel="icon" href="logo.png">
+ <link rel="stylesheet" href="style.css">
+  </head> 
+<body>
+    <nav>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#"><kbd><big>Izic✨ portfolio</big></kbd></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+    <section id="contact">
+        <h1>Get in Touch</h1>
+        <form>
+   <input type="text" placeholder="Name" required>
+   <input type="email" placeholder="Email" required>
+   <textarea placeholder="Message" required></textarea>
+       <button>Send</button>
+     </form>
+     <br><br><br>
+     <b>How to locate me </b><br>
+i reside at masaka, Nasarawa state. But a student of Ahmadu Bello university(ABU) studying Bsc physics. <br>
+
+    </section>
+   &nbsp <i>lets work together to create something amazing... 🤩</i>
+    
+    <br><br>
+  <footer>
+&nbsp &nbsp <a href="https://wa.me/2349064178174?text=Hello sir Izic✨, i am contacting from your portfolio."><img src="Whatsapp.png" height="50" width="50" alt="Whatsapp"></a> &nbsp &nbsp
+      <img src="facebook.png" height="50" width="50" alt="Facebook">
+      <br><br>
+     
+      <p>Izic✨ portfolio, Copyright &copy; 2025</p>
+    
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+     
+body {
+    background: linear-gradient(135deg, #24271751, #618c92dd);
+    font-family: fantasy;
+   margin: 0; 
+   padding: 0;
+}
+
+    nav{
+  background-color: none;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.hamburger-menu{
+  cursor: pointer;
+}
+
+.hamburger-menu span{
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+li{
+  margin-bottom: 10px;
+}
+
+ a{
+  color: #072156f0;
+  text-decoration: none;
+  font-size: 20px;
+} 
+ .show{
+  display: block !important;
+} 
+
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+ 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0 1px 5px grey;
+    outline: none;
+}
+
+button {
+    background-color: grey;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color: azure;
+  
+  text-align: center;
+}
+</style>
+
+
+
+
+
+
+<script>
+       /*menu*/
+       
+    const hamburgerMenu= document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('ul');
+
+hamburgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+}); 
+
+ 
+ 
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.querySelector('input[type="text"]').value;
+  const email = document.querySelector('input[type="email"]').value;
+  const message = document.querySelector('textarea').value;
+
+  const whatsappUrl = `https://wa.me/2349064178174?text=Name:%20${name}%0AEmail:%20${email}%0AMessage:%20${message}`;
+
+  window.open(whatsappUrl, '_blank');
+});
+
+</script>
